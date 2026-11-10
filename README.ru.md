@@ -1,6 +1,6 @@
 # dsh-llm-gigachat
 
-[![npm version](https://img.shields.io/npm/v/dsh-llm-gigachat.svg)](https://www.npmjs.com/package/dsh-llm-gigachat)
+[![npm version](https://img.shields.io/npm/v/@bigleech/dsh-llm-gigachat.svg)](https://www.npmjs.com/package/@bigleech/dsh-llm-gigachat)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DSH 0.2.x](https://img.shields.io/badge/DSH-0.2.x-blue)](https://github.com/deepseek-ai/deepseek-harness)
 
@@ -29,7 +29,7 @@
 ### Через npm (рекомендуется)
 
 ```bash
-dsh plugin --profile web add dsh-llm-gigachat
+dsh plugin --profile web add @bigleech/dsh-llm-gigachat
 ```
 
 ### Ручная установка
@@ -204,7 +204,7 @@ gigachat:
 ### Экспорты плагина
 
 ```javascript
-import { name, inject, Config, SettingsSchema, apply } from 'dsh-llm-gigachat';
+import { name, inject, Config, SettingsSchema, apply } from '@bigleech/dsh-llm-gigachat';
 ```
 
 | Экспорт | Тип | Описание |
