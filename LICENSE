@@ -1,6 +1,18 @@
 MIT License
 
-Copyright (c) 2026 dsh-llm-gigachat contributors
+Copyright (c) 2026 Igor Korobeynikov (original dsh-llm-gigachat)
+Copyright (c) 2026 bigleech (DSH 0.2.x compatibility fork)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice (including the names of
+both the original author and fork author) shall be included in all
+copies or substantial portions of the Software.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -39,6 +39,12 @@ dsh plugin --profile web add dsh-llm-gigachat
 dsh plugin --profile web add ./path/to/dsh-llm-gigachat
 ```
 
+### From GitHub
+
+```bash
+dsh plugin --profile web add git+https://github.com/bigleech/dsh-llm-gigachat.git
+```
+
 ---
 
 ## ⚙️ Configuration
