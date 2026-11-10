@@ -33,11 +33,11 @@
   "author": "Igor Korobeynikov",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/igrock88/dsh-llm-gigachat.git"
+    "url": "git+https://github.com/bigleech/dsh-llm-gigachat.git"
   },
-  "homepage": "https://github.com/igrock88/dsh-llm-gigachat#readme",
+  "homepage": "https://github.com/bigleech/dsh-llm-gigachat#readme",
   "bugs": {
-    "url": "https://github.com/igrock88/dsh-llm-gigachat/issues"
+    "url": "https://github.com/bigleech/dsh-llm-gigachat/issues"
   },
   "dependencies": {
     "@deepseek-ai/schemastery": "^3.18.2"

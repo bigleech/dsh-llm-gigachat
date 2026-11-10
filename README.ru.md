@@ -1,7 +1,8 @@
 # dsh-llm-gigachat
 
-[![GitHub](https://img.shields.io/badge/GitHub-igrock88/dsh--llm--gigachat-blue)](https://github.com/igrock88/dsh-llm-gigachat)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/dsh-llm-gigachat.svg)](https://www.npmjs.com/package/dsh-llm-gigachat)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DSH 0.2.x](https://img.shields.io/badge/DSH-0.2.x-blue)](https://github.com/deepseek-ai/deepseek-harness)
 
 **Плагин DeepSeek Harness для Sber GigaChat** — подключает LLM-модели GigaChat к DSH через встроенный OAuth-прокси, автоматическую настройку провайдера и трансляцию tool-calling.
 
@@ -203,10 +204,24 @@ import { name, inject, Config, SettingsSchema, apply } from 'dsh-llm-gigachat';
 | Экспорт | Тип | Описание |
 |---------|-----|----------|
 | `name` | `string` | Идентификатор плагина: `"llm-gigachat"` |
-| `inject` | `string[]` | Зависимости: `["llm"]` |
+| `inject` | `string[]` | Зависимости: `[]` (нет жёстких зависимостей; прокси запускается независимо) |
 | `Config` | `z<Config>` | Zod-схема конфигурации |
 | `SettingsSchema` | `z<Config>` | Псевдоним `Config` |
 | `apply` | `function` | Точка входа жизненного цикла плагина |
+
+---
+
+## Credits & Acknowledgments
+
+Этот плагин — **форк для совместимости с DSH 0.2.x** оригинального [`dsh-llm-gigachat`](https://github.com/igrock88/dsh-llm-gigachat) от **Igor Korobeynikov** ([@igrock88](https://github.com/igrock88)). Базовая логика OAuth-прокси, трансляции tool-calling и сериализации запросов основана на его работе.
+
+Форк добавляет:
+- Совместимость с DSH 0.2.x (`.volatile()` настройки, удаление `settings.installSection()`)
+- Распаковку volatile-объектов через `.get()`
+- Независимый запуск прокси (без жёсткой зависимости `inject`)
+- Обновлённый `package.json` для `engines.dsh: ">=0.2.1-rc.1"`
+
+Если вам это полезно, пожалуйста, поставьте звёздочку и [оригинальному репозиторию](https://github.com/igrock88/dsh-llm-gigachat).
 
 ---
 
@@ -218,4 +233,4 @@ import { name, inject, Config, SettingsSchema, apply } from 'dsh-llm-gigachat';
 
 ## 🤝 Вклад
 
-Проблемы и pull requests приветствуются на [GitHub](https://github.com/igrock88/dsh-llm-gigachat).
+Проблемы и pull requests приветствуются на [GitHub](https://github.com/bigleech/dsh-llm-gigachat).
