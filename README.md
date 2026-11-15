@@ -10,6 +10,17 @@
 
 ---
 
+> **⚠️ Vibe-coded project**
+>
+> This plugin was written with heavy AI assistance (GigaCode / LLM agents) —
+> the term [vibe coding](https://en.wikipedia.org/wiki/Vibe_coding) fits well.
+> The architecture, API integration, and debugging were done in a human-AI
+> dialogue, not by hand. It works (verified against DSH 0.2.2-rc.1 on Windows),
+> but expect rough edges: inconsistent naming, minimal tests, and comments that
+> may not match the code. PRs and fixes are very welcome.
+
+---
+
 ## 📋 Features
 
 - **Built-in OAuth 2.0 proxy** — handles GigaChat token exchange automatically
@@ -196,6 +207,17 @@ gigachat:
 ### Plugin doesn't appear in DSH 0.2.x
 
 Make sure you're using the `0.2.x` version of the plugin. The old `0.1.x` version used `settings.installSection()` which was removed in DSH 0.2.x.
+
+---
+
+## 🐛 Known Limitations
+
+- **Vibe-coded**: written with AI assistance; not audited line-by-line by a human.
+- **No automated tests**: verification was manual (proxy responds, models list loads, chat works).
+- **Windows-only tested**: verified on Windows 10 + PowerShell 5.1; Linux/macOS untested.
+- **DSH 0.2.2-rc.1 only**: the `cordis.patch.yml` may not apply on newer Cordis versions.
+- **Tool calling is best-effort**: works with `GigaChat-3-Ultra`/`Pro`; lighter models strip tools.
+- **No CI/CD**: no GitHub Actions, no linting, no type checking pipeline.
 
 ---
 
