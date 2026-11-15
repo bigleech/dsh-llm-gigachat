@@ -32,7 +32,10 @@
     "vibe-coding",
     "ai-generated"
   ],
-  "author": "Igor Korobeynikov",
+  "author": "bigleech (fork of original work by Igor Korobeynikov)",
+  "contributors": [
+    "Igor Korobeynikov <https://github.com/igrock88> (original dsh-llm-gigachat)"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bigleech/dsh-llm-gigachat.git"
