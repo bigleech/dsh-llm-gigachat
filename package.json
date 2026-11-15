@@ -1,6 +1,6 @@
 {
   "name": "@bigleech/dsh-llm-gigachat",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "DeepSeek Harness (dsh) plugin that connects Sber GigaChat models: a built-in local OAuth proxy (client-credentials -> OpenAI-compatible endpoint, upstream serialization, legacy tool-calling translation) plus automatic provider-route bootstrap, so GigaChat appears on the standard Models settings page. Compatible with DSH 0.2.x. Vibe-coded with AI assistance.",
   "type": "module",
   "main": "lib/index.js",
